@@ -106,6 +106,7 @@ const Home = () => {
                 src={imageUrl}
                 alt="Uploaded"
                 className="d-block w-100 rounded-4"
+                style={{border:'1px solid'}}
               />
             )}
           </Col>
