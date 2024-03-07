@@ -20,7 +20,7 @@ const Home = () => {
 
   const handleConvert = () => {
     if (!imageFile) {
-      alert("Please select an image first.");
+      alert("Vui lòng chọn ảnh hoặc điền trực tiếp vào ô Văn bản.");
       return;
     }
 
@@ -78,7 +78,7 @@ const Home = () => {
             {" "}
             <Form>
               <Form.Group className="position-relative mb-3">
-                <Form.Label>File</Form.Label>
+                <Form.Label>Chọn hình ảnh:</Form.Label>
                 <Form.Control
                   type="file"
                   required
@@ -106,7 +106,7 @@ const Home = () => {
                 src={imageUrl}
                 alt="Uploaded"
                 className="d-block w-100 rounded-4"
-                style={{border:'1px solid'}}
+                style={{ border: "1px solid" }}
               />
             )}
           </Col>
@@ -115,6 +115,7 @@ const Home = () => {
           <Col className="col-md-6 col-12 mt-md-0 mt-3">
             <Form onSubmit={handleSubmit}>
               <Form.Group className="position-relative mb-3">
+                <Form.Label>Văn bản:</Form.Label>
                 <Form.Control
                   as="textarea"
                   required
