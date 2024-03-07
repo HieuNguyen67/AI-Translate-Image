@@ -44,7 +44,7 @@ const Home = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5020/v1/api/admin/translate",
+        "https://backend-ai-translate.vercel.app/v1/api/admin/translate",
         {
           text,
         }
@@ -66,13 +66,12 @@ const Home = () => {
         <h1
           className="mx-auto col-12 text-center"
           style={{
-            color: "transparent",
-            background: "linear-gradient(147deg, #FFE53B 0%, #FF2525 74%)",
-            backgroundClip: "text",
+            color: "#ff5722",
+
             fontSize: "3rem",
           }}
         >
-         Dịch Văn Bản Tiếng Anh Từ Hình Ảnh
+          Dịch Văn Bản Tiếng Anh Từ Hình Ảnh
         </h1>
         <Row className="mt-5">
           <Col className="col-md-6 col-12">
