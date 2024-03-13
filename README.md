@@ -1,1 +1,1 @@
-DEMO: https://ai-translate-image.vercel.app/
+DEMO: ai-translate-image-fawn.vercel.app
